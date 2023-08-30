@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form in HTML</title>
+    </head>
+    <body>
+        <h2>Registration form</h2>
+        <form>
+            <fieldset>
+                <legend>User personal information</legend>
+                <label>Enter your Full Name</label><br>
+                <input type="text" name="name"><br>
+                <label>Enter your email</label><br>
+                <input type="email" name="email"><br>
+                <label>Enter your password</label><br>
+                <input type="password" name="pass"><br>
+                <label>Confirm your password</label><br>
+                <input type="password" name="pass"><br>
+                <br>
+                <label>Enter your gender</label><br>
+                <input type="radio" id="gender" name="gender" value="male">Male <br>
+                <input type="radio" id="gender" name="gender" value="female">Female <br>
+                <label>Hobby:</label><br>
+                <input type="checkbox" name="cricket" id="cricket" value="cricket">
+                <label for="cricket">Cricket</label><br>
+                <input type="checkbox" name="football" id="football" value="football">
+                <label for="football">Football</label><br>
+                <input type="checkbox" id="hockey" name="hockey" value="hockey">
+                <label for="hockey">Hockey</label><br>
+                <label>Select Country</label>
+                <select>
+                    <option value="india">india</option>
+                    <option value="pakistan">pakistan</option>
+                    <option value="nepal">nepal</option>
+                    <option value="USA">USA</option>
+                    <option value="other">other</option>
+                </select>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <optgroup label="Swedish Car">
+                        <option value="volvo" selected>Volvo</option>
+                        <option value="saab">Saab</option>
+                    </optgroup>
+                    <optgroup label="German Car">
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                </select>
+                <br>Enter your Address: <br>
+                <textarea></textarea><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+            <br>PLEASE LISTEN THIS AMAZING SOUND.YOU WILL BE BLESSED:<br>
+            <audio controls>
+                <source src="my.m4a" type="audio/mpeg">
+            </audio>
+            <br> PLEASE WATCH THIS WONDERFUL VIDEO <br>
+            <video width="320" height="320" controls autoplay>
+                <source src="ushv.mp4" type="video/mp4" >
+            </video>
+
+        </form>
+    </body>
+</html>

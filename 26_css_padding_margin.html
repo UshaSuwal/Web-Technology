@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css padding and margin property</title>
+        <style>
+            div{
+                border: 2px solid red;
+                background-color: lightblue;
+                padding-top: 20px;
+                padding-bottom: 40px;
+                padding-left: 60px;
+                padding-right: 30px;
+
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 80px;
+                margin-right: 150px;
+            }
+            #other{
+                padding: 20px 10px 30px;     /* top right bottom left*/
+                /* padding: 20px;                 => all padding */
+                /* padding: 20px 10px;            => top=20  left,right=10 */
+                /* padding: 20px 10px 30px;       => top=20 left,right=10  bottom=30 */
+                /* padding: 20px 10px 30px 40px;  =>top=20 right=10 bottom=30 left=40 */
+
+            }
+        </style>
+    </head>
+    <body style="background-color: grey;">
+        <h2>Using individual padding property</h2>
+        <div>this div element has top left right and bottom padding. And also have the top down left right margin</div>
+        <br><br>
+        <p id="other"> This is padding in one line</p>
+    </body>
+</html>

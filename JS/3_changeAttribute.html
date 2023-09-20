@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Changing Attribute</title>
+    </head>
+    <body>
+        <h2>Changing attribute through Java</h2>
+        <p>Java can change HTML attribute value</p>
+        <p>In this case JavaScript changes the value of src(source) attribute of an image</p>
+
+        <button onclick='document.getElementById("light").src="on_bulb.gif"'>Turn on the light</button>
+
+        <img id="light" src="on_bulb.gif" style="width: 100px">   <!--first on wala display vaira hunxa-->
+
+        <button onclick='document.getElementById("light").src="off_bulb.gif"'>Turn off the light</button>
+    </body>
+</html>
+
+<!-- first on_bulb display vaira hunxa and button display vaira hunxa tara onclick run va hudaina cause click gareko xaina.
+So if turn off click garyo vane light id bata image src on_bulb to off_bulb change hunxa. And off_bulb display hunxa -->

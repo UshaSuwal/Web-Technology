@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Creating object by creating instance of object</title>
+    </head>
+    <body>
+        <h1>Creating object by creating instance of object</h1>
+        <p>Name is :</p>
+        <script>
+            var person=new Object();
+            person["firstname"]="Usha"
+            person.lastName="Suwal"
+            person.getFullName=function(){
+                return this.firstname+" "+this.lastName
+            }
+            document.write(person.getFullName());
+        </script>
+        
+    </body>
+</html>

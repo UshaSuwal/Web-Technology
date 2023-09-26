@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Creating object using object constructor</title>
+    </head>
+    <body>
+        <h3>Creating object using object constructor</h3>
+        <p>Employee detail :</p>
+        <script>
+            function emp(id,name,salary){
+                this.id=id;
+                this.name=name;
+                this.salary=salary;
+            }
+            e=new emp(103,"Usha Suwal",100000)
+            document.write(e.id+" "+e.name+" "+e.salary);
+
+            // Using math object (inbuilt):
+            document.write("pi_value:",Math.PI," ")
+            document.write("sqrt_value:",Math.sqrt(16))
+        </script>
+        
+    </body>
+</html>

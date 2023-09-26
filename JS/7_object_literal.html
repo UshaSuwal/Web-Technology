@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Creating object using object literal</title>
+    </head>
+    <body>
+        <h1>Creating object using object literal</h1>
+        <p>Name is :</p>
+        <script>
+            var person={
+                firstName:"Usha",
+                lastName:"Suwal",
+                age:21,
+                getFullName:function(){
+                    return this.firstName+" "+this.lastName
+                }
+            }
+            document.write(person.getFullName());
+        </script>
+        
+    </body>
+</html>

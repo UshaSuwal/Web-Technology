@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Error Handling</title>
+    </head>
+    <body>
+        <p>Please input a number between 5 and 10: </p>
+        <input type="text" id="demo">
+        <button type="button" onclick="myfunction()">Test input</button>
+        <p id="p01"></p>
+        <script>
+            function myfunction(){
+                var message, x;
+                message=document.getElementById("p01");       // khali hunxa first ma ani tei thau ma dekhauna lai.
+                message.innerHTML="";
+                x=document.getElementById("demo").value;        // .value used to extract value.
+                try{
+                    if(x=="") throw " is empty";
+                    if(isNaN(x)) throw " is not a number ";
+                    x=Number(x);
+                    if(x>10) throw " is too high";
+                    if(x<5) throw " is too low";
+                }
+                catch(err){
+                    message.innerHTML="Input"+err;
+                }
+                finally{
+                    document.getElementById("demo").value="";    // try gara: .value="rubin eats poop"
+                }
+            }
+        </script>
+    </body>
+</html>

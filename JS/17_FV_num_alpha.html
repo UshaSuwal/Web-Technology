@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title>Form Validation: Checking Number and Alphabet</title>
+    </head>
+    <body>
+        <script>
+            function validateNum(){
+                var x=/^[0-9]+$/;
+                var y=document.getElementById('elem').value;
+                if(y.match(x)){
+                    alert("Valid Entry");
+                }
+                else{
+                    alert("Invalid Entry");
+                    document.getElementById('elem').value="";  // field clear gardinxa
+                    document.getElementById('elem').focus();   // field highlight gardinxa  
+                }
+            }
+            function validateAlpha(){
+                var a=/^[a-zA-Z]+$/;
+                var b=document.getElementById('alpha').value;
+                if(b.match(a)){
+                    alert("Valid Entry");
+                }
+                else{
+                    alert("Invalid Entry");
+                    document.getElementById('alpha').value="";  // field clear gardinxa
+                    document.getElementById('alpha').focus();   // field highlight gardinxa  
+                }
+            }
+        </script>
+        <form>
+            Required field Num: <input type="text" id="elem">
+            <input type="button" onclick="validateNum()" value="Check"/> <br>
+            Required field Alpha: <input type="text" id="alpha">
+            <input type="button" onclick="validateAlpha()" value="Check"/>
+        </form>
+    </body>
+</html>
